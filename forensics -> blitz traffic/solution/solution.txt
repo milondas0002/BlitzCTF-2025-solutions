@@ -1,0 +1,2 @@
+Just read this writeup and you will be able to know everything to solve the challenge
+"https://github.com/C4spr0x1A/CTF-Writeups/blob/main/Blitz%20CTF%202025/Forensics/Blitz%20Traffic.md"
