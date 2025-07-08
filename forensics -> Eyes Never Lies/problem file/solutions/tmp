@@ -1,1 +1,8 @@
-a
+Description
+Sometimes, what you see isn't the whole truth. Perception can be deceiving, but subtle changes can reveal what’s truly hidden. Can you see through the distortion and find the secret?
+
+Solution:
+In order to solve this challenge I would suggest you to read this blog throughly, "https://cyberhacktics.com/hiding-information-by-changing-an-images-height/".
+An awesome blog taking about how one can hide data by decreasing the actual height or width inside an image without altering it. 
+Use any hexeditor and change the height to 900 or 800 in decimal, in hexadecimal that should be "03 84"(900, decimal)
+After doing so, and saving it as new image, you will easily be able to see the flag
