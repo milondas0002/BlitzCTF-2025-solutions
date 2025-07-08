@@ -1,0 +1,16 @@
+Description
+Don't keep the jar of cookies in the open...
+
+Take the file from here: https://drive.google.com/file/d/1oLiJ9NQH9UFv-W1iFvlXbUB4k-0X8e7L/view?usp=sharing
+Solution:
+I wasn't been able to solve the challenge during contest time. Here is link for official writeup "https://ctf-8.gitbook.io/vedved/blitz-ctf-2025-official-writeups" if ypu want to learn actually how it should be solved
+But it can also be solve using only strings command
+But there is a catch, the catch is that u just simply have to guess that the flag is encoded in base64 which is very common in CTF scenarios
+just use this command, "strings firefoxchall | grep -i "QmxpdHp"" and you will get your flag in base64 format, which stand for Blitz
+So the command will show ypu this output,
+"totallynormalcookie=QmxpdHp7ZjFyM2YweF81aDB1bGRfM25jcnlwdF9jMDBrMTM1fQo%3D; Max-Age=86400; Path=/; Expires=Sat, 22 Mar 2025 17:38:46 GMT; HttpOnly
+totallynormalcookie=QmxpdHp7ZjFyM2YweF81aDB1bGRfM25jcnlwdF9jMDBrMTM1fQo%3D; Max-Age=86400; Path=/; Expires=Sat, 22 Mar 2025 17:38:46 GMT; HttpOnly
+set-cookie: totallynormalcookie=QmxpdHp7ZjFyM2YweF81aDB1bGRfM25jcnlwdF9jMDBrMTM1fQo%3D; Max-Age=86400; Path=/; Expires=Sat, 22 Mar 2025 17:38:46 GMT; HttpOnly
+totallynormalcookieQmxpdHp7ZjFyM2YweF81aDB1bGRfM25jcnlwdF9jMDBrMTM1fQo%3Dmilitary-candle-elephant.glitch.me/g
+totallynormalcookie=QmxpdHp7ZjFyM2YweF81aDB1bGRfM25jcnlwdF9jMDBrMTM1fQo%3D; Max-Age=86400; Path=/; Expires=Sat, 22 Mar 2025 17:38:46 GMT; HttpOnly"
+After decoding it using cyberchef you will find the flag, "Blitz{f1r3f0x_5h0uld_3ncrypt_c00k135}"
